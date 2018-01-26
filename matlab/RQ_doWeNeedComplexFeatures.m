@@ -1,13 +1,9 @@
 % RQ: Do we have to calculate other features but the landmarking?
 % Data: see RQ_doWeNeedComplexFeatures.xslx
-% Conclusion: meta-learning does not work well on CORA and WebKP database because
-% there is not a single landmarking feature.
+% Conclusion: see RQ_doWeNeedComplexFeatures.r
 
 % Setting
 databaseNames = {'Accidents', 'AustralianFootball', 'Basketball_men', 'Biodegradability', 'Carcinogenesis', 'ccs', 'Chess', 'CORA', 'financial', 'Hepatitis_std', 'Mondial', 'mutagenesis', 'nations', 'PremierLeague', 'PTE', 'Student_loan', 'VisualGenome', 'Walmart', 'WebKP', 'world'};
-databaseNames = {'world'};
-
-
 
 % Logger
 logger = [];

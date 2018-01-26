@@ -21,7 +21,7 @@ plotFEsim(feEx)
 plotREsim(reEx)
 
 
-## OLS 
+# OLS 
 fit <- lm(misclassification ~ database + attribute + featureFunction + landmarking + 1, data=ANOVA) 
 summary(fit)
 plot(fit)

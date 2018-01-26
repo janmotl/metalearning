@@ -1,11 +1,10 @@
 % RQ: How many features (in percentage of all features) do we have to 
-% calculate to get misclassification equal to misclassification on the 
-% whole tree?
+% calculate to get misclassification equal or smaller to 
+% misclassification obtained on all features?
 % Data: see RQ_howManyFeatures.xslx
 
 % Setting
 databaseNames = {'Accidents', 'AustralianFootball', 'Basketball_men', 'Biodegradability', 'Carcinogenesis', 'ccs', 'Chess', 'CORA', 'financial', 'Hepatitis_std', 'Mondial', 'mutagenesis', 'nations', 'PremierLeague', 'PTE', 'Student_loan', 'VisualGenome', 'Walmart', 'WebKP', 'world'};
-databaseNames = {'Accidents', 'Biodegradability', 'financial', 'Hepatitis_std', 'mutagenesis', 'Student_loan'};
 
 % Logger
 logger = [];

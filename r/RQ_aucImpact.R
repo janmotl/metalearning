@@ -21,11 +21,8 @@ plotFEsim(feEx)
 plotREsim(reEx)
 
 
-## OLS 
+# OLS 
 fit <- lm(auc ~ database + chi2 + runtime + duplication + redundancy + 1, data=ANOVA) 
 summary(fit)
 plot(fit)
 
-## Regularized
-library(lmmlasso)
-lmmlasso(data.matrix(ANOVA[,2:6]), ANOVA$auc)

@@ -8,12 +8,6 @@ fit <- lm(ki ~ chi2 + duplication + runtime + duplication:chi2 + 0, data=R)
 summary(fit)
 
 
-# ANOVA treats blocks as a random variable, not as fixed effects.
-ANOVA <- read_excel("Dropbox/Dokumenty/7-1/Predictor Factory/Code/meta learning/RQ_factorAnalysis.xlsx", sheet = "Data")
-fit <- aov(ki ~ database + chi2 + duplication + runtime + duplication:chi2, data=ANOVA) 
-summary(fit)
-
-
 # Mixed regression provides significance estimates for the factors
 library(lme4)  # load library
 library(lmerTest) # extend lmer with p-value
@@ -24,6 +18,3 @@ fit <- lmer(ki ~ ( 1 | database) + chi2 + duplication + runtime + duplication:ch
 summary(fit)
 plot(fit)
 r.squaredGLMM(fit)
-
-
-

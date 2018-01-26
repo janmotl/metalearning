@@ -1,10 +1,9 @@
 % RQ: What is the contribution of chi2, relevance and duplication models?
-% Data: see factorAnalysis.xslx
-% Conclusion: see factorAnalysis.r
+% Data: see RQ_factorAnalysis.xslx
+% Conclusion: see RQ_factorAnalysis.r
 
 % Setting
 databaseNames = {'Accidents', 'AustralianFootball', 'Basketball_men', 'Biodegradability', 'Carcinogenesis', 'ccs', 'Chess', 'CORA', 'financial', 'Hepatitis_std', 'Mondial', 'mutagenesis', 'nations', 'PremierLeague', 'PTE', 'Student_loan', 'VisualGenome', 'Walmart', 'WebKP', 'world'};
-databaseNames = {'mutagenesis'};
 
 % Logger
 logger = [];
